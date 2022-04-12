@@ -23,8 +23,24 @@ Measurement data values are passed-back in three, 16-bit, signed integer variabl
 
 # Contents
 1. libLCD - contains library funtion for the LCD module. <br> 
-..* HD44780.c 
-..* HD44780.h 
-..* HD44780_Setting.h
-3. 
-4. 
+* HD44780.c 
+* HD44780.h 
+* HD44780_Setting.h
+2. libTWI - contains Arduino's I2C TWI library in c and required helpers. <br>
+3. libTfLuna - contains c library for TfLuna LiDAR module. <br>
+4. lidar.c - main program file that uses the libraries to execute. <br>
+RESPECTIVE \_Setting.h file can be edited to change pinouts.
+<hr>
+
+# STEPS TO COMPILE
+1. Make sure [avr-gcc](https://blog.zakkemble.net/avr-gcc-builds/ "twi.c") is downloaded and present in the directory right outside this repo.
+2. Check all the Setting.h files in "lib" directories to make sure the pinouts are correct.
+3. Wire the circuit.
+4. Connect Arduino to the PC and check for correct COM Port.
+5. Edit the compile_script.py, enter the right COM port.
+6. Run compile_script.py: <br>
+Syntax: ./compile_script.py <level_of_compilation> <br>
+where level_of_compilation is in the range 1 - 4.
+
+# OUTPUT
+If done correctly, the LCD screen should display just the distance between the sensor and an object, in cm.

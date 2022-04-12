@@ -22,6 +22,9 @@ Measurement data values are passed-back in three, 16-bit, signed integer variabl
 <br />&nbsp;&nbsp;&#8211;&nbsp; `temp` Temperature in hundreths of degrees Celsius. Range: -25.00°C to 125.00°C
 
 # Contents
-1. libLCD - contains library funtion for the LCD module. <br> ..* HD44780.c ..* HD44780.h ..* HD44780_Setting.h
+1. libLCD - contains library funtion for the LCD module. <br> 
+..* HD44780.c 
+..* HD44780.h 
+..* HD44780_Setting.h
 3. 
 4. 

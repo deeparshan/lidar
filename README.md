@@ -52,3 +52,5 @@ where level_of_compilation is in the range 1 - 4.
 
 # OUTPUT
 If done correctly, the LCD screen should display just the distance between the sensor and an object, in cm.
+# DEMO
+[Here's my working demo](https://youtu.be/hASGI82sDSI)
